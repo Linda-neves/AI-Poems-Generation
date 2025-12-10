@@ -16,10 +16,16 @@ h1 {
   line-height: 1.5;
   text-align: center;
 }
-form {
+.form-container{
   padding: 25px;
-
   margin-bottom: 30px;
+}
+.hint{
+  opacity: 0.6;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 5px;
 }
 .fill-in {
   padding: 16px;
@@ -47,6 +53,23 @@ form {
   margin-bottom: 20px;
   font-weight: 650;
   text-align: center;
+}
+.hidden{
+  display: none;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 footer {
   text-align: center;
